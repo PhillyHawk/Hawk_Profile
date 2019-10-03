@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,74 +8,73 @@
   <title>Hawk's Profile</title>
 
 
-      <!-- Bootstrap -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-<!-- Google font -->
-<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat+Subrayada:700|Palanquin+Dark:500&display=swap" rel="stylesheet">
+  <!-- Google font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat+Subrayada:700|Palanquin+Dark:500&display=swap"
+    rel="stylesheet">
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/3f5de397b7.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3f5de397b7.js"></script>
 
-<!-- Javascript -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
 
 
 </head>
+
 <body>
   <!-- Header -->
-    <div class="contentContainer">
-        <div style="width: 100%">
-          <nav id="title" class="navbar">
-            <a class="navbar-brand" href="new_index.html">
-              <h1 id="name">Hawk Shannon</h1>
-            </a>
-            <div class="dropdown">
-             
-              <a href="https://www.linkedin.com/in/hawk-shannon-814a3b184/"><img
-                src="photos/iconfinder_Linkedin_4745729.svg" style="width: 80px"></a>
-              <a href="https://github.com/PhillyHawk"><img src="photos/iconfinder_GitHub_4745725.png"
-                style="width: 80px"></a>
+  <div id="navbar">
+    <a href="#default" id="logo">Hawk Shannon</a>
+    <div id="navbar-right">
+      <a href="#home">Home</a>
+      <a href="#contact">Projects</a>
+      <a href="#about">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <!-- About Me -->
+
+
+    <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+        <section class="container">
+            <div id="card">
+              <figure class="front"></figure>
+              <figure class="back">About Me</figure>
             </div>
-          </nav>
-        </div>
-        <div class="container">
-          <!-- About Me -->
-        <div id="aboutMe" class="card">
-        <div class="row">
-          <div class="col-4">
-            <div id="buttonArea" class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-8">
-            <div class="text-center" class="card">
-              <div class="card-body">
-                  <img id="hawkPhoto" src="photos/Hawk4_Profile.jpg"  class="img-fluid"  
-                  alt="Hawk">
-                
-              </div>
-            </div>
-          </div>
-        <a id="aboutMe"><br></a>
-      </div>
+          </section>
+          
+          <section id="options">
+            <p>
+              <button id="flip">Flip Card</button>
+            </p>
+          </section>
+          <script>
+
+              var card = document.getElementById('card');
+              
+              document.getElementById('flip').addEventListener('click', function() {
+                  card.classList.toggle('flipped');
+              }, false);
+              </script>
+    </div>
   </div>
 </body>
+
 </html>
