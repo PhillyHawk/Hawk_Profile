@@ -9,4 +9,17 @@
 }
 #name{
   color: black;
-  font-size: 80px
+  font-size: 80px;
+}
+#aboutMe{
+  margin-top: 50px;
+}
+#buttonArea{
+  height:520px;
+}
+#photoArea{
+  height:520px;
+}
+#hawkPhoto{
+-moz-box-align: center;
+}
