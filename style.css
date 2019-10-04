@@ -85,8 +85,10 @@ h2{
 #aboutMe{
   background-color: #dee1ec;
 }
-
-.container2 {
+#flip{
+  background-color: #eac100;
+}
+.flipCard {
   width: 550px;
   height: 550px;
   position: relative;
