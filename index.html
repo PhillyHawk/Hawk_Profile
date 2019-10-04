@@ -34,6 +34,12 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="app.js"></script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+  <script type="text/javascript" src="circulate2.js"></script>
+  <script type="text/javascript" src="circulate.js"></script>
+  <script type="text/javascript" src="circulate3.js"></script>
+  <script type="text/javascript" src="flip.js"></script>
+
 
 
 </head>
@@ -53,28 +59,98 @@
 
 
     <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
-        <section class="container">
-            <div id="card">
-              <figure class="front"></figure>
-              <figure class="back">About Me</figure>
-            </div>
-          </section>
-          
-          <section id="options">
-            <p>
-              <button id="flip">Flip Card</button>
-            </p>
-          </section>
-          <script>
+      <div class="card-deck">
+        <div id="aboutMe" class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <button id="flip">Flip Card</button>
+          <div class="card-body">
+            <!-- <h2 class="card-title">About Me</h2>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam rem facere itaque perspiciatis, reprehenderit vero aperiam mollitia corporis aliquam. Accusantium tempore quibusdam ducimus pariatur aperiam officiis cum dolore, sequi vitae.</p> -->
+            <section class="container2">
+              <div id="card">
+                <figure class="front">
+                  <h2 class="card-title">About Me</h2>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam rem facere itaque
+                    perspiciatis, reprehenderit vero aperiam mollitia corporis aliquam. Accusantium tempore quibusdam
+                    ducimus pariatur aperiam officiis cum dolore, sequi vitae.</p>
+                </figure>
+                <figure class="back">
+                  <p>HTML</p>
+                  <div class="container">
+                    <div class="skills html">90%</div>
+                  </div>
 
-              var card = document.getElementById('card');
-              
-              document.getElementById('flip').addEventListener('click', function() {
-                  card.classList.toggle('flipped');
-              }, false);
-              </script>
+                  <p>CSS</p>
+                  <div class="container">
+                    <div class="skills css">80%</div>
+                  </div>
+
+                  <p>JavaScript</p>
+                  <div class="container">
+                    <div class="skills js">65%</div>
+                  </div>
+
+                  <p>PHP</p>
+                  <div class="container">
+                    <div class="skills php">60%</div>
+                  </div>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+        <script>
+
+          var card = document.getElementById('card');
+
+          document.getElementById('flip').addEventListener('click', function () {
+            card.classList.toggle('flipped');
+          }, false);
+        </script>
+        <div class="card">
+          <img src="photos/Hawk4_Profile.jpg" class="card-img-top" alt="...">
+          <!-- <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div> -->
+        </div>
+      </div>
+      <div id="sphere-area">
+        <img src="photos/ball-green.png" alt="ball" id="orange-ball" />
+        <img src="photos/ball-green.png" id="blue-ball" alt="" />
+        <img src="photos/ball-green.png" id="green-ball" alt="" />
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 </body>
 
 </html>

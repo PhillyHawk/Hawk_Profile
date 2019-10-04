@@ -3,11 +3,12 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #dee1ec;
 }
 
 #navbar {
   overflow: hidden;
-  background-color: dodgerblue;
+  background-color: #10316b;
   padding: 40px 10px;
   transition: 0.4s;
   position: fixed;
@@ -18,7 +19,7 @@ body {
 
 #navbar a {
   float: left;
-  color: black;
+  color: #dee1ec;
   text-align: center;
   padding: 8px;
   text-decoration: none;
@@ -66,22 +67,47 @@ body {
 
 #hawkPhoto{
 -moz-box-align: center;
-} 
-.container {
+}
+
+h2{
+  color: #0b8457;
+}
+
+.card-deck{
+  margin-top: 50px;
+}
+
+#sphere-area { height: 350px; position: relative; width: 100%; }
+#sphere-area img { width: 150px; height: 150px; position: absolute; top: 50px; left: 450px; }
+#sphere-area #blue-ball { opacity: 0; }
+#sphere-area #green-ball { opacity: 0; }
+
+#aboutMe{
+  background-color: #dee1ec;
+}
+
+.container2 {
   width: 550px;
   height: 550px;
   position: relative;
   perspective: 800px;
+  background-color: #dee1ec;
 }
 
 #card {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  position: absolute;
+  position: center;
   transform-style: preserve-3d;
   transition: transform 1s;
+  background-color: #dee1ec
 }
 
+.card-text {
+  word-wrap: break-word;
+}
+
+/* card flip */
 #card figure {
   margin: 0;
   display: block;
@@ -92,16 +118,41 @@ body {
 }
 
 #card .front {
-  background-image: url(photos/Hawk4_Profile.jpg);
+  background-color: #0b8457;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #card .back {
-  background: blue;
+  background-color: #10316b;
   transform: rotateY( 180deg);
 }
 
 #card.flipped {
   transform: rotateY( 180deg);
 }
+#option{
+  position: center;
+}
+
+/* skill box */
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #dee1ec; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
