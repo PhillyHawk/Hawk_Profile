@@ -1,42 +1,5 @@
 $(window).load(function() {
 
-  // $(".top-demo div").each(function() {
-  //     $(this).circulate({
-  //         speed: Math.floor(Math.random()*300) + 100,
-  //         height: Math.floor(Math.random()*1000) - 470,
-  //         width: Math.floor(Math.random()*1000) - 470
-  //     });
-  // }).click(function() {
-  //     $(this).circulate({
-  //         speed: Math.floor(Math.random()*300) + 100,
-  //         height: Math.floor(Math.random()*1000) - 470,
-  //         width: Math.floor(Math.random()*1000) - 470
-  //     });
-  // });
-      
-  // $("#recurssive-button").click(function() {
-  //     if ($(this).text() == "Start") {
-  //         $("#text-demo span").circulate({
-  //             loop: true,
-  //             width: 150,
-  //             height: 10
-  //         });
-  //         $(this).text("Stop");
-  //     } else {
-  //         $("#text-demo span").circulate("Stop");
-  //         $(this).text("Start");
-  //     }       
-  // });   
-  
-  // $("#unicorn").css("left", $("#unicorn").position().left).circulate({
-  //         sizeAdjustment: 160,
-  //         speed: 2000,
-  //         width: -820,
-  //         height: 50,
-  //         loop: true,
-  //         zIndexValues: [1, 50, 50, 1]
-  // });
-
   function startBallOne() {
       $("#orange-ball").circulate({
           speed: 4000,
