@@ -7,7 +7,7 @@ $(window).load(function() {
           width: -700,
           sizeAdjustment: 40,
           loop: true,
-          zIndexValues: [1, 1, 3, 3]
+          zIndexValues: [1, 1, 6, 6]
       });
   }
   
@@ -39,7 +39,27 @@ $(window).load(function() {
         width: -700,
         sizeAdjustment: 25,
         loop: true,
-        zIndexValues: [4, 4, 1, 1]
+        zIndexValues: [4, 4, 5, 5]
+    }).fadeIn();
+}
+function startBallFive() {
+    $("#yellow-ball").circulate({
+        speed: 4000,
+        height: 140,
+        width: -700,
+        sizeAdjustment: 20,
+        loop: true,
+        zIndexValues: [5, 5, 4, 4]
+    }).fadeIn();
+}
+function startBallSix() {
+    $("#purple-ball").circulate({
+        speed: 4000,
+        height: 140,
+        width: -700,
+        sizeAdjustment: 15,
+        loop: true,
+        zIndexValues: [6, 6, 1, 1]
     }).fadeIn();
 }
   
@@ -48,5 +68,8 @@ $(window).load(function() {
   setTimeout(startBallTwo, 2000);
   setTimeout(startBallThree, 4000);
   setTimeout(startBallFour, 6000);
+  setTimeout(startBallFive, 8000);
+  setTimeout(startBallSix, 10000);
+
   
 });
