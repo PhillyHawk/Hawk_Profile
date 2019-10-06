@@ -7,7 +7,7 @@ $(window).load(function() {
           width: -700,
           sizeAdjustment: 40,
           loop: true,
-          zIndexValues: [1, 1, 6, 6]
+          zIndexValues:[1, 1, 5, 5]
       });
   }
   
@@ -39,7 +39,7 @@ $(window).load(function() {
         width: -700,
         sizeAdjustment: 25,
         loop: true,
-        zIndexValues: [4, 4, 5, 5]
+        zIndexValues: [4, 4, 3, 3]
     }).fadeIn();
 }
 function startBallFive() {
