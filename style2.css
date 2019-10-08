@@ -26,7 +26,7 @@ body,html{
   height:100vh;
   width:100vw;
   overflow-x:hidden;
-  color:#fff;
+  color:black;
   position:fixed
 }
 a,h1,h2,h3,h4,h5,h6,p{
@@ -126,7 +126,14 @@ a,h1,h2,h3,h4,h5,h6,p{
     display:flex;
     flex-direction:column;
     align-items:center;
-    text-align:center
+    text-align:center;
+    background-color: Transparent;
+    color: white;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
   }
   .taskbar-icon-container:hover .taskbar-icon-label{
     visibility:visible
@@ -139,7 +146,14 @@ a,h1,h2,h3,h4,h5,h6,p{
   }
   .taskbar-icon{
     transition:all .1s ease;
-    width:42px
+    width:42px;
+    background-color: Transparent;
+    color: white;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
   }
   .taskbar-icon:active{
     filter:brightness(50%)
@@ -162,7 +176,14 @@ a,h1,h2,h3,h4,h5,h6,p{
     visibility:hidden
   }
   .finder-icon{
-    margin-top:2px
+    margin-top:2px;
+    background-color: Transparent;
+    color: white;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
   }
   .sublime-icon,.terminal-icon{
     width:43px;
@@ -213,7 +234,30 @@ a,h1,h2,h3,h4,h5,h6,p{
     overflow: hidden;
     outline:none;
   }
-  /* }
+  .window-button-container{
+    display:flex;
+    flex-direction:row;
+    padding:5px
+  }
+  .window-button-container .window-button{
+    color:#000;
+    border-width:0;
+    border-radius:50%;
+    width:13px;
+    height:13px;
+    margin-left:8px;
+    cursor:pointer
+  }
+  .window-button-container .button-close{
+    background-color:#fc635d;
+    border:1px solid #de5953;
+    transition:all .2s ease
+  }
+  .window-button-container .button-close:hover{
+    background-color:#fb1b12
+  }
+
+  /* 
   .window{
     position:absolute;
     top:0;

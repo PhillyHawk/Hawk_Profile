@@ -27,10 +27,10 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3f5de397b7.js"></script>
 
-  <script type="text/javascript" src="directory.js"></script>
-  <script type="text/javascript" src="finder.js"></script>
+  <!-- <script type="text/javascript" src="directory.js"></script> -->
+  <!-- <script type="text/javascript" src="finder.js"></script>
   <script type="text/javascript" src="terminal.js"></script>
-  <script type="text/javascript" src="window.js"></script>
+  <script type="text/javascript" src="window.js"></script> -->
 
 </head>
 
@@ -57,7 +57,7 @@
         
       <div class="desktop-icon-container desktop-education-folder">
         <a class="desktop-icon-link">
-          <button type="button" class="desktopButton" data-toggle="modal" data-target="#exampleModalCenter1">
+          <button type="button" class="desktopButton" data-toggle="modal" data-target="#exampleModalCenter">
             <img class="desktop-icon" src="photos/directory.png">
             <p>Education</p>
           </button>
@@ -89,26 +89,22 @@
         </div>
     </div>
     <!-- Modal1 -->
-    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="window-button-container">
+              <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+              <button type="button" class="window-button button-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1>this is text</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      
     <!-- Modal2 -->
 <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -163,8 +159,37 @@
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="desktopButton" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">modal4</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <div class="taskbar-icon-container">
+      <p class="taskbar-icon-label">Finder</p>
+      <div class="label-triangle"></div>
+      <a class="taskbar-icon-link"><button type="button" data-toggle="modal" data-target="#exampleModalCenter5"><img class="taskbar-icon finder-icon" src="photos/finder.png" />
+        </button></a>
+    </div>
+  </div>
+  <!-- Modal5 -->
+<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
