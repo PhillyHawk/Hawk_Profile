@@ -204,6 +204,16 @@ a,h1,h2,h3,h4,h5,h6,p{
     margin-bottom:10px;
     font-size:10px
   }
+  .desktopButton{
+    background-color: Transparent;
+    color: white;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+  /* }
   .window{
     position:absolute;
     top:0;
@@ -471,4 +481,4 @@ a,h1,h2,h3,h4,h5,h6,p{
   }
   .cmd{
     color:#1eba20
-  }
+  } */
