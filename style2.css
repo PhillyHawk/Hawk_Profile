@@ -240,7 +240,7 @@ a,h1,h2,h3,h4,h5,h6,p{
     padding:5px
   }
   .window-button-container .window-button{
-    color:#000;
+    /* color:#000; */
     border-width:0;
     border-radius:50%;
     width:13px;
