@@ -128,7 +128,7 @@ a,h1,h2,h3,h4,h5,h6,p{
     align-items:center;
     text-align:center;
     background-color: Transparent;
-    color: white;
+    /* color: white; */
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
@@ -162,7 +162,7 @@ a,h1,h2,h3,h4,h5,h6,p{
     margin-top:-34px;
     visibility:hidden;
     width:110px;
-    background-color:#cbcdcc;
+    background-color:transparent;
     border-radius:5px;
     margin-bottom:17px;
     padding:2px 5px;
@@ -241,23 +241,21 @@ a,h1,h2,h3,h4,h5,h6,p{
   }
   .window-button-container .window-button{
     /* color:#000; */
-    border-width:0;
-    border-radius:50%;
-    width:13px;
-    height:13px;
-    margin-left:8px;
-    cursor:pointer
+    display:block;
+    box-sizing:border-box;
+    width:20px;
+    height:20px;
+    border-width:3px;
+    border-style: solid;
+    border-color:red;
+    border-radius:100%;
+    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+    background-color:red;
+    box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
   }
-  .window-button-container .button-close{
-    background-color:#fc635d;
-    border:1px solid #de5953;
-    transition:all .2s ease
-  }
-  .window-button-container .button-close:hover{
-    background-color:#fb1b12
-  }
-
-  /* 
+ 
+  
   .window{
     position:absolute;
     top:0;
@@ -525,4 +523,4 @@ a,h1,h2,h3,h4,h5,h6,p{
   }
   .cmd{
     color:#1eba20
-  } */
+  }

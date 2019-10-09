@@ -27,10 +27,10 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3f5de397b7.js"></script>
 
-  <!-- <script type="text/javascript" src="directory.js"></script> -->
-  <!-- <script type="text/javascript" src="finder.js"></script>
+  <script type="text/javascript" src="directory.js"></script>
+  <script type="text/javascript" src="finder.js"></script>
   <script type="text/javascript" src="terminal.js"></script>
-  <script type="text/javascript" src="window.js"></script> -->
+  <script type="text/javascript" src="window.js"></script>
 
 </head>
 
@@ -89,7 +89,7 @@
         </div>
     </div>
     <!-- Modal1 -->
-    <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="window-button-container">
@@ -170,31 +170,35 @@
     <div class="taskbar-icon-container">
       <p class="taskbar-icon-label">Finder</p>
       <div class="label-triangle"></div>
-      <a class="taskbar-icon-link"><button type="button" data-toggle="modal" data-target="#exampleModalCenter5"><img class="taskbar-icon finder-icon" src="photos/finder.png" />
-        </button></a>
+      <a class="taskbar-icon-link"><img class="taskbar-icon finder-icon" src="photos/finder.png">
+        </a>
     </div>
   </div>
   <!-- Modal5 -->
-<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+<div class="window finder-window ui-widget-content ui-draggable-handle ui-resizable" style="z-index: 19;">
+<div class="window-nav">
+  <div class="window-button-container">
+    <a class="window-button button-close"></a>
+    <a class="window-button button-min"></a>
+    <a class="window-button button-expand"></a>
+  </div>
+  <div class="window-title-container">
+    <p>Finder</p>
+  </div>
+</div>
+<div class="finder-file-container content-container">
+  <!--outermost folders-->
+  <div class="finder-section findedr-outer-directory-list-container finder-section-border">
+    <div class="finder-outer-directory-list">
+      <div class="finder-directory-container education-folder">
+        <div>
+          <img class="finder-folder-icon" src="photos/directory.png">
+          <div class="finder-directory">
+            <p>Education</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-</body>
-
-</html>
+</div>
+</div>
