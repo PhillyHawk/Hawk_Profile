@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   // education
   $('.finder-item-container.palmer-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.plamer-selected-item').removeClass('hide');
+    $('.finder-selected-item-wrapper.palmer-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.chadron-list-item').on('click', function(e) {
