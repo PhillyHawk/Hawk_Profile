@@ -34,16 +34,16 @@ $(document).ready(function() {
   });
 
   // education
-  $('.finder-item-container.burton-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.burton-selected-item').removeClass('hide');
+  $('.finder-item-container.palmer-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.plamer-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.berkeley-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.berkeley-selected-item').removeClass('hide');
+  $('.finder-item-container.chadron-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.chadron-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.major-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.major-selected-item').removeClass('hide');
+  $('.finder-item-container.msu-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.msu-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.minor-list-item').on('click', function(e) {
