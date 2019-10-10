@@ -1,24 +1,29 @@
-var modal = document.getElementById("myModal");
+$(document).ready(function() {
+  $('.desktop-icon-container').on('click', function() {
+    $('.finder-directory-container').removeClass('highlight');
+    $('.finder-section.finder-inner-items-list-container').addClass('finder-section-border');
+    $('.finder-inner-items-list').addClass('hide');
+    $('.finder-selected-item-wrapper').addClass('hide');
+    $('.finder-window').removeClass('hide');
+  });
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+  $('.desktop-education-folder').on('click', function() {
+    $('.education-folder').addClass('highlight');
+    $('.education-items').removeClass('hide');
+  });
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  $('.desktop-experience-folder').on('click', function() {
+    $('.experience-folder').addClass('highlight');
+    $('.experience-items').removeClass('hide');
+  });
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  $('.desktop-projects-folder').on('click', function() {
+    $('.projects-folder').addClass('highlight');
+    $('.project-items').removeClass('hide');
+  });
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+  $('.desktop-documents-folder').on('click', function() {
+    $('.documents-folder').addClass('highlight');
+    $('.document-items').removeClass('hide');
+  });
+});

@@ -46,8 +46,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.msu-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.minor-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.minor-selected-item').removeClass('hide');
+  $('.finder-item-container.upenn-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.upenn-selected-item').removeClass('hide');
   });
 
   // experience
