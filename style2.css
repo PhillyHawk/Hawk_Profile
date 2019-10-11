@@ -185,14 +185,14 @@ a,h1,h2,h3,h4,h5,h6,p{
     overflow: hidden;
     outline:none;
   }
-  .sublime-icon,.terminal-icon{
+  /* .sublime-icon,.terminal-icon{
     width:43px;
     filter:brightness(90%)
   }
   .terminal-icon{
     margin-top:1px;
     width:44px
-  }
+  } */
   .user{
     transition:all .1s ease;
     position:fixed;
@@ -330,34 +330,7 @@ a,h1,h2,h3,h4,h5,h6,p{
     margin-left:-70px
   }
 
-  /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
-/* Container for skill bars */
-.container {
-  width: 100%; /* Full width */
-  background-color: transparent; /* Grey background */
-}
-
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
-}
-
-.html {width: 90%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
-
-  .finder-window,.terminal-window{
-    top:10vh;
-    left:20vw;
-    height:70vh;
-    width:60vw
-  }
-  .sublime-window,.terminal-window{
+  /* .sublime-window,.terminal-window{
     background-color:#000
   }
   .sublime-window{
@@ -367,7 +340,7 @@ a,h1,h2,h3,h4,h5,h6,p{
   .terminal-window{
     top:15vh;
     left:25vw
-  }
+  } */
   @media screen and (max-width:1024px){
   .finder-window,.window{
     top:0;
@@ -474,7 +447,7 @@ a,h1,h2,h3,h4,h5,h6,p{
   .finder-selected-item{
     display:none
   }}
-  .sublime-content-container{
+  /* .sublime-content-container{
     width:100%;
     height:100%;
     display:flex
@@ -545,4 +518,32 @@ a,h1,h2,h3,h4,h5,h6,p{
   }
   .cmd{
     color:#1eba20
+  } */
+  /* Skill bar */
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: transparent; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+  .finder-window,.terminal-window{
+    top:10vh;
+    left:20vw;
+    height:70vh;
+    width:60vw
   }

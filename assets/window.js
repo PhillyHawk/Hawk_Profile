@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('.finder-inner-items-list').addClass('hide');
     $('.finder-selected-item-wrapper').addClass('hide');
   });
-
+ 
   $('.window').on('click', '.button-min', function(e) {
     $(this).closest('.window').addClass('hide');
   });
