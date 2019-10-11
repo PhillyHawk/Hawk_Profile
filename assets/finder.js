@@ -80,8 +80,8 @@ $(document).ready(function() {
   });
 
   // projects
-  $('.finder-item-container.stopbot-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.stopbot-selected-item').removeClass('hide');
+  $('.finder-item-container.muttropolitan-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.muttropolitan-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.devils-list-item').on('click', function(e) {
