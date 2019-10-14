@@ -88,8 +88,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.hikeBuddy-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.referobot-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.referobot-selected-item').removeClass('hide');
+  $('.finder-item-container.roloDex-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.roloDex-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.liquefy-list-item').on('click', function(e) {
