@@ -84,8 +84,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.muttropolitan-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.devils-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.devils-selected-item').removeClass('hide');
+  $('.finder-item-container.hikeBuddy-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.hikeBuddy-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.referobot-list-item').on('click', function(e) {
