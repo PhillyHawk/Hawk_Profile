@@ -92,8 +92,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.roloDex-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.liquefy-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.liquefy-selected-item').removeClass('hide');
+  $('.finder-item-container.gBooks-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.gBooks-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.news-list-item').on('click', function(e) {
