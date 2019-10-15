@@ -30,6 +30,7 @@
   <script type="text/javascript" src="assets/directory.js"></script>
   <script type="text/javascript" src="assets/window.js"></script>
   <script type="text/javascript" src="assets/finder.js"></script>
+  <script type="text/javascript" src="assets/dropdown.js"></script>
   <!-- <script type="text/javascript" src="terminal.js"></script> -->
 </head>
 
@@ -183,9 +184,19 @@
               </div>
               <br>
               <div class="finder-item-container workHistory-list-item">
-                  <div><img class="finder-folder-icon image" src="photos/directory.png" /></div>
+                  <div class="finder-item-container workHistory-list-item">
+                      <div class="dropdown">
+                          <a onclick="myFunction()" class="dropbtn" class="finder-item"><img class="finder-folder-icon image" src="photos/directory.png" /></a>
+                          <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                          </div>
+                        </div>
+                  </div>
+                 
                   <div class="finder-item">
-                    <p>Work History</p>
+                    <p>Work Experience</p>
                   </div>
                 </div>
             </div>
@@ -294,6 +305,44 @@
 
 
             <!--experience selected items panel-->
+            <div class="finder-selected-item-wrapper skills-selected-item hide">
+              <div class="finder-selected-item">
+                  <div class="container">
+                      <p>HTML</p>
+                      <div class="container">
+                        <div class="skills html">90%</div>
+                      </div>
+    
+                      <p>CSS</p>
+                      <div class="container">
+                        <div class="skills css">90%</div>
+                      </div>
+    
+                      <p>JavaScript</p>
+                      <div class="container">
+                        <div class="skills js">65%</div>
+                      </div>
+    
+                      <p>PHP</p>
+                      <div class="container">
+                        <div class="skills php">60%</div>
+                      </div>
+    
+                      <p>React.js</p>
+                      <div class="container">
+                        <div class="skills react">60%</div>
+                      </div>
+    
+                      <p>MySQL</p>
+                      <div class="conatainer">
+                        <div class="skills mysql">75%</div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+
+
             <!--Projects selected panel-->
             <div class="finder-selected-item-wrapper muttropolitan-selected-item hide">
               <div class="finder-selected-item">
