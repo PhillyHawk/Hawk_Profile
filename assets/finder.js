@@ -51,8 +51,8 @@ $(document).ready(function() {
   });
 
   // experience
-  $('.finder-item-container.adobe-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.adobe-selected-item').removeClass('hide');
+  $('.finder-item-container.skills-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.skills-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.climate-list-item').on('click', function(e) {
