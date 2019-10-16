@@ -1,6 +1,6 @@
 var currDirFiles = 'Education\nExperience\nProjects\nDocuments';
 var curr = 'desktop';
-var currPath = '~/Brenda_Zhang/Desktop';
+var currPath = '~/Hawk_Shannon/Desktop';
 
 var errColor = {
   finalize: function(div) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
         this.echo('');
       } else if (subcmd === '../') {
         currDirFiles = 'Education\nExperience\nProjects\nDocuments';
-        currPath = '~/Brenda_Zhang/Desktop';
+        currPath = '~/Hawk_Shannon/Desktop';
         if (curr === 'desktop') {
           this.echo('zsh: cd: permission denied', errColor);
         }
@@ -41,23 +41,23 @@ $(document).ready(function() {
       } else if (subcmd == 'desktop') {
         currDirFiles = 'Education\nExperience\nProjects\nDocuments';
         curr = 'desktop';
-        currPath = '~/Brenda_Zhang/Desktop';
+        currPath = '~/Hawk_Shannon/Desktop';
       } else if (subcmd == 'education') {
-        currDirFiles = 'Burton High School.jpg\nUC Berkeley.jpg\nCognitive Science Major.pdf\nComputer Science Minor.pdf';
+        currDirFiles = 'Chadron.jpg\nmsu.pdf\nupenn.pdf';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Education';
+        currPath = '~/Hawk_Shannon/Desktop/Education';
       } else if (subcmd == 'experience') {
         currDirFiles = 'The Climate Corporation.jpg\nStowk.jpg\nRegistria.png\nWeb Design DeCal.pdf\nAsian American Association.jpg\nFoundation or Letters.pdf';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Experience';
+        currPath = '~/Hawk_Shannon/Desktop/Experience';
       } else if (subcmd == 'projects') {
-        currDirFiles = 'Discord Stop Bot.js\nDevil\'s Advocate.html\nReferobot.js\nLiquefy Web App.js\nNewsworthy New Tab.html\nCrayons4Kids Website.html';
+        currDirFiles = 'Muttropolitan.html\nHike Buddy.js\nRolo.Dex.js\n';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Projects';
+        currPath = '~/Hawk_Shannon/Desktop/Projects';
       } else if (subcmd == 'documents') {
-        currDirFiles = 'Resume.pdf\nAbout.pdf\nQuotes.pdf';
+        currDirFiles = 'Resume.pdf\nAbout.pdf';
         curr = 'folder';
-        currPath = '~/Brenda_Zhang/Desktop/Documents';
+        currPath = '~/Hawk_Shannon/Desktop/Documents';
       } else {
         this.echo('cd: no such file or directory: ' + subcmd, errColor);
       }
@@ -67,9 +67,9 @@ $(document).ready(function() {
       this.echo('zsh: command not found: ' + command, errColor);
     }
   }, {
-    greetings: 'Brenda Desktop Interpreter - Last login: ' + new Date,
+    greetings: 'Hawk Desktop Interpreter - Last login: ' + new Date,
     name: 'interpreter',
     height: '90%',
-    prompt: 'brendacs:~$ '
+    prompt: 'Hawkcs:~$ '
   });
 });
