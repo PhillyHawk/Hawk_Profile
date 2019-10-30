@@ -25,6 +25,7 @@ $(document).ready(function() {
   $('.documents-folder').on('click', function(e) {
     $('.document-items').removeClass('hide');
   });
+  
 
   // folder items
   $('.finder-item-container').on('click', function(e) {
@@ -55,8 +56,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.skills-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.climate-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.climate-selected-item').removeClass('hide');
+  $('.finder-item-container.workHistory-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.workHistory-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.stowk-list-item').on('click', function(e) {
