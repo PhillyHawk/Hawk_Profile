@@ -101,8 +101,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.peeWee-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.csch-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.csch-selected-item').removeClass('hide');
+  $('.finder-item-container.fairAmoount-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.fairAmoount-selected-item').removeClass('hide');
   });
 
   // documents
