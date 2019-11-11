@@ -38,17 +38,6 @@ $(document).ready(function() {
     $('.browser-window').removeClass('hide');
   });
 
-  $('.sublime-icon').on('click', function(e) {
-    open = open + 1;
-    $('.sublime-window').css('z-index', zindex + open);
-    $('.sublime-window').removeClass('hide');
-  });
-
-  $('.terminal-icon').on('click', function(e) {
-    open = open + 1;
-    $('.terminal-window').css('z-index', zindex + open);
-    $('.terminal-window').removeClass('hide');
-  });
 
   // desktop folders
   $('.desktop-education-folder').on('click', function(e) {

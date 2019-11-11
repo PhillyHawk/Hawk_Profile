@@ -97,8 +97,8 @@ $(document).ready(function() {
     $('.finder-selected-item-wrapper.gBooks-selected-item').removeClass('hide');
   });
 
-  $('.finder-item-container.news-list-item').on('click', function(e) {
-    $('.finder-selected-item-wrapper.news-selected-item').removeClass('hide');
+  $('.finder-item-container.peeWee-list-item').on('click', function(e) {
+    $('.finder-selected-item-wrapper.peeWee-selected-item').removeClass('hide');
   });
 
   $('.finder-item-container.csch-list-item').on('click', function(e) {
